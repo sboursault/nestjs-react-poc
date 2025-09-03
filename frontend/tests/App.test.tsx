@@ -6,7 +6,9 @@ import App from '../src/App';
 import { http, HttpResponse } from 'msw'
 import { test } from './setup'
 
-
+const app = {
+  title: () => screen.getByText('Scenario Manager')
+}
 
 test('renders name',async ({
   server,
@@ -18,7 +20,7 @@ test('renders name',async ({
 
   render(<App />)
 
-  await expect(screen.getByText('Scenario Manager')).toBeInTheDocument();
+  await expect(app.title()).toBeInTheDocument();
 })
 
 
