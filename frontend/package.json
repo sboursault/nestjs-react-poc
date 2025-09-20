@@ -3,17 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@vitejs/plugin-react-swc": "^4.1.0",
     "bulma": "^1.0.4",
     "cra-template-pwa-typescript": "2.0.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-scripts": "5.0.1"
+    "vite": "^7.1.6",
+    "vite-plugin-svgr": "^4.5.0",
+    "vite-tsconfig-paths": "^5.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "vitest": "vitest",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "vitest": "vitest"
   },
   "eslintConfig": {
     "extends": [
@@ -38,8 +41,10 @@
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.1",
+    "cypress": "^15.2.0",
     "jsdom": "^26.1.0",
     "msw": "^2.11.0",
+    "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   }
 }

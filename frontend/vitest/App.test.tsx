@@ -22,13 +22,3 @@ test('renders name',async ({
 
   await expect(app.title()).toBeInTheDocument();
 })
-
-
-// https://vitest.dev/guide/mocking.html#requests
-// https://mswjs.io/docs/recipes/vitest-browser-mode
-// https://vitest.dev/guide/test-context.html#extend-test-context
-// https://mswjs.io/docs/api/setup-worker/
-// https://github.com/mswjs/msw/issues/1657 init mocks with node or browser
-// https://github.com/mswjs/examples/tree/main/examples/with-vitest
-// https://github.com/vidhiksimform/mock_api_demo
-// https://github.com/mswjs/msw/issues/694 clear client cache
